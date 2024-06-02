@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    
+  }
+  h2{
+    text-align: center;
+  }
+  .container {
+    width: 1000px;
+    margin: 50 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 120px;
+    padding-left: 350px;
+  }
+  .contact-form {
+    width: 60%;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .contact-form input[type="text"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .contact-form input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  .contact-form button {
+    background-color: #a53939;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    align-items: center;
+    text-align: center;
+    
+  }
+  button{
+    text-align: center;
+    align-items: center;
+    padding:50px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <form class="contact-form" action="/action_page.php" method="post">
+      <h2>Talk to us</h2>
+      <label for="work_email">Work Email</label>
+      <input type="text" id="work_email" name="work_email" placeholder="johndoe@acme.com">
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" name="firstname" placeholder="John">
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Doe">
+      <label for="terms">
+        <input type="checkbox" id="terms" name="terms">
+        I agree to Fyle's terms and conditions, and provide consent to send me communication.
+      </label>
+      <button type="submit" >Contact Us</button>
+   
+  </div>
+</body>
+</html>

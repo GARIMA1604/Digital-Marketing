@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Marketing Website</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.text-container, .image-container {
+    flex: 1 1 500px; /* Adjusts the flex-basis to a minimum width */
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.text-container h2 {
+    font-size: 1.5em; /* Increased font size for h2 */
+    font-family: "Times New Roman";
+    align-items: flex-start;
+    color: #bd2828; /* Changed color for h2 */
+}
+.text-container {
+    flex:1 1 700px;
+    text-align: center;
+    width:70%;
+    
+
+}
+.text-container h1 {
+    font-size: 2.5em; /* Increased font size for h2 */
+}
+.image-container {
+    flex: 1 1 800px; /* Increased width of the image container */
+    padding: 20px;
+    box-sizing: border-box;
+    height:550px; /* Increased height of the image container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 200%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.slide-down {
+            animation: slideDown 1s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        /* Styles for the new content */
+
+      
+    </style>
+    </style>
+</head>
+
+<body  class="slide-down" >
+
+    <div class="container">
+        <div class="text-container">
+            <h2>AWARD WINNING</h2>
+            <h1>DIGITAL MARKETING AGENCY</h1>
+            <p>Morbi sed locus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit frigilla ac at purus. Morbi sed lacus risus finibus feugiat et fermentum.</p>
+           <a href="contact.html"> <button class="contact-button" onclick="openModal()">Contact Us</button></a>
+             </div>
+           
+            <script>
+                // Function to open the modal
+                function openModal() {
+                    document.getElementById('contactModal').style.display = 'flex';
+                    
+
+                }
+        
+                // Function to close the modal
+                function closeModal() {
+                    document.getElementById('contactModal').style.display = 'none';
+                }
+        
+                // Close the modal when clicking outside of it
+                window.onclick = function(event) {
+                    if (event.target == document.getElementById('contactModal')) {
+                        closeModal();
+                    }
+                }
+                document.addEventListener("DOMContentLoaded", function() {
+    document.body.classList.add("slide-down"); // Add class for sliding down effect
+});
+// Function to show/hide the new content based on scroll position
+// Function to show/hide the new content based on scroll position
+window.addEventListener('scroll', function() {
+    var newContent = document.getElementById("newContent");
+    if (window.scrollY >120) {
+        newContent.style.display = "block"; // Show the new content when scrolling down
+    } else {
+        newContent.style.display = "none"; // Hide the new content when scrolling up
+    }
+});
+
+
+
+
+            </script>
+           
+              
+        </div>
+        <div class="image-container">
+            <img src="C:\Users\91705\Desktop\Digital website\Screenshot 2024-06-01 221550.png" alt="Sample Image">
+        </div>
+        
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
